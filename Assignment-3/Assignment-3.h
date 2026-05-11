@@ -55,6 +55,9 @@ class AndersenPTA : public SVF::AndersenBase {
 	// To be implemented
 	void solveWorklist() override;
 
+	// Helper: initialise points-to sets from all Addr constraints
+	void processAllAddr();
+
 	/// Add copy edge on constraint graph
 	virtual bool addCopyEdge(SVF::NodeID src, SVF::NodeID dst) override {
 		if (consCG->addCopyCGEdge(src, dst))
