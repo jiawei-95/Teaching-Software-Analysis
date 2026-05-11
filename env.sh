@@ -7,10 +7,10 @@ PROJECTHOME=$(pwd)
 sysOS=`uname -s`
 
 # Set the major version of LLVM
-MajorLLVMVer=16
+MajorLLVMVer=21
 
 # Define the full LLVM version
-LLVMVer=${MajorLLVMVer}.0.0
+LLVMVer=${MajorLLVMVer}.1.0
 
 # Set the home directories for LLVM and Z3
 LLVMHome="llvm-${LLVMVer}.obj"
